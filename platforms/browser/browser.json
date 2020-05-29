@@ -1,0 +1,40 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "com.hipmob.android.phonegap.plugin": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "com.hipmob.ios.phonegap.plugin": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "file": "plugins/com.hipmob.android.phonegap.plugin/www/hipmob.js",
+      "id": "com.hipmob.android.phonegap.plugin.Hipmob",
+      "pluginId": "com.hipmob.android.phonegap.plugin",
+      "clobbers": [
+        "window.plugins.Hipmob"
+      ]
+    },
+    {
+      "file": "plugins/com.hipmob.ios.phonegap.plugin/www/hipmob.js",
+      "id": "com.hipmob.ios.phonegap.plugin.Hipmob",
+      "pluginId": "com.hipmob.ios.phonegap.plugin",
+      "clobbers": [
+        "window.plugins.Hipmob"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "com.hipmob.android.phonegap.plugin": "1.0.0",
+    "com.hipmob.ios.phonegap.plugin": "1.0.0"
+  }
+}
